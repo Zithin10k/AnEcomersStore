@@ -18,7 +18,7 @@ import ContactUs from "./components/ContactUs";
 function App() {
   return (
     <>
-      <Router>
+      <Router basename="/AnEcomersStore">
         <Navbar />
         <Routes>
         <Route path='/' element={<HomePage/>} />
