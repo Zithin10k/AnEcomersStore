@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.js": "/react-gh-pages/static/js/main.781f43e4.js",
-    "static/js/787.25def421.chunk.js": "/react-gh-pages/static/js/787.25def421.chunk.js",
-    "static/media/type.webp": "/react-gh-pages/static/media/type.4875b71b1eec773c13a0.webp",
-    "static/media/banner.webp": "/react-gh-pages/static/media/banner.da934c23920a7e564bd0.webp",
-    "static/media/mobileBanner.jpg": "/react-gh-pages/static/media/mobileBanner.31e5c52ed7f8f81c967e.jpg",
-    "static/media/shope.jpg": "/react-gh-pages/static/media/shope.db9ebfe7e6cb0ed82def.jpg",
-    "static/media/logo.png": "/react-gh-pages/static/media/logo.339f6b893af75f13cb36.png",
-    "static/media/item.jpeg": "/react-gh-pages/static/media/item.54bebfe255f0d6b1504f.jpeg",
-    "index.html": "/react-gh-pages/index.html",
-    "main.781f43e4.js.map": "/react-gh-pages/static/js/main.781f43e4.js.map",
-    "787.25def421.chunk.js.map": "/react-gh-pages/static/js/787.25def421.chunk.js.map"
+    "main.js": "/AttendanceManager/static/js/main.7dffb744.js",
+    "static/js/787.25def421.chunk.js": "/AttendanceManager/static/js/787.25def421.chunk.js",
+    "static/media/type.webp": "/AttendanceManager/static/media/type.4875b71b1eec773c13a0.webp",
+    "static/media/banner.webp": "/AttendanceManager/static/media/banner.da934c23920a7e564bd0.webp",
+    "static/media/mobileBanner.jpg": "/AttendanceManager/static/media/mobileBanner.31e5c52ed7f8f81c967e.jpg",
+    "static/media/shope.jpg": "/AttendanceManager/static/media/shope.db9ebfe7e6cb0ed82def.jpg",
+    "static/media/logo.png": "/AttendanceManager/static/media/logo.339f6b893af75f13cb36.png",
+    "static/media/item.jpeg": "/AttendanceManager/static/media/item.54bebfe255f0d6b1504f.jpeg",
+    "index.html": "/AttendanceManager/index.html",
+    "main.7dffb744.js.map": "/AttendanceManager/static/js/main.7dffb744.js.map",
+    "787.25def421.chunk.js.map": "/AttendanceManager/static/js/787.25def421.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.781f43e4.js"
+    "static/js/main.7dffb744.js"
   ]
 }
