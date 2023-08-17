@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.js": "/AttendanceManager/static/js/main.7dffb744.js",
-    "static/js/787.25def421.chunk.js": "/AttendanceManager/static/js/787.25def421.chunk.js",
-    "static/media/type.webp": "/AttendanceManager/static/media/type.4875b71b1eec773c13a0.webp",
-    "static/media/banner.webp": "/AttendanceManager/static/media/banner.da934c23920a7e564bd0.webp",
-    "static/media/mobileBanner.jpg": "/AttendanceManager/static/media/mobileBanner.31e5c52ed7f8f81c967e.jpg",
-    "static/media/shope.jpg": "/AttendanceManager/static/media/shope.db9ebfe7e6cb0ed82def.jpg",
-    "static/media/logo.png": "/AttendanceManager/static/media/logo.339f6b893af75f13cb36.png",
-    "static/media/item.jpeg": "/AttendanceManager/static/media/item.54bebfe255f0d6b1504f.jpeg",
-    "index.html": "/AttendanceManager/index.html",
-    "main.7dffb744.js.map": "/AttendanceManager/static/js/main.7dffb744.js.map",
-    "787.25def421.chunk.js.map": "/AttendanceManager/static/js/787.25def421.chunk.js.map"
+    "main.js": "/AnEcomersStore/static/js/main.f2aa0da1.js",
+    "static/js/787.25def421.chunk.js": "/AnEcomersStore/static/js/787.25def421.chunk.js",
+    "static/media/type.webp": "/AnEcomersStore/static/media/type.4875b71b1eec773c13a0.webp",
+    "static/media/banner.webp": "/AnEcomersStore/static/media/banner.da934c23920a7e564bd0.webp",
+    "static/media/mobileBanner.jpg": "/AnEcomersStore/static/media/mobileBanner.31e5c52ed7f8f81c967e.jpg",
+    "static/media/shope.jpg": "/AnEcomersStore/static/media/shope.db9ebfe7e6cb0ed82def.jpg",
+    "static/media/logo.png": "/AnEcomersStore/static/media/logo.339f6b893af75f13cb36.png",
+    "static/media/item.jpeg": "/AnEcomersStore/static/media/item.54bebfe255f0d6b1504f.jpeg",
+    "index.html": "/AnEcomersStore/index.html",
+    "main.f2aa0da1.js.map": "/AnEcomersStore/static/js/main.f2aa0da1.js.map",
+    "787.25def421.chunk.js.map": "/AnEcomersStore/static/js/787.25def421.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.7dffb744.js"
+    "static/js/main.f2aa0da1.js"
   ]
 }
