@@ -1,25 +1,35 @@
-import React,{useState} from 'react'
+import React,{useContext, useState} from 'react'
 import { StyledNavbar, Items } from './styled/StyledNavBar.styled'
 import SideNavBar from './SideNavBar'
 import { useMediaQuery } from 'react-responsive'
 import {Link} from "react-router-dom";
+import NoteContext from '../Context/NoteContext';
 export default function Navbar() {
-  const [showSidebar,setShowSidebar]=useState(false)
+  const AppContext= useContext(NoteContext)
   const isDesktopOrLaptop = useMediaQuery({ minWidth: 600 })
   const isTabletOrMobile = useMediaQuery({ maxWidth: 600 })
   const ifMobileorIfLoptop = (a, b) => {
     if (isTabletOrMobile) { console.log('mobile'); return a };
     if (isDesktopOrLaptop) console.log('laptop'); return b;
   }
+  function wait3Sec() {
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        resolve('resolved');
+      }, 3000);
+    });
+  }
+  
+
   return (
     <>
     <StyledNavbar fontSize={ifMobileorIfLoptop(1.1, 1.5)}>
-   {showSidebar &&<SideNavBar> </SideNavBar>}
+   {AppContext.showSideNavbar &&<SideNavBar> </SideNavBar>}
       {ifMobileorIfLoptop(true, false) &&
-      <div  onClick={()=>setShowSidebar((showSidebar)?false:true)} >
+      <div  onClick={()=>{AppContext.setShowSideNavbar((AppContext.showSideNavbar)?false:true)}} >
         
         {
-        !(showSidebar)?
+        !(AppContext.showSideNavbar)?
         
             <svg 
             xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width='37px' height='37px' viewBox="0 0 72 72"
@@ -40,7 +50,7 @@ export default function Navbar() {
            <Link id='item' to="/About"><li>Contact us</li></Link>
         </Items>
       </>}
-      {ifMobileorIfLoptop(true, false) && <h2 onClick={()=>setShowSidebar((showSidebar)?false:true)}> Leela and Jaya</h2>}
+      {ifMobileorIfLoptop(true, false) && <h2 onClick={()=>AppContext.setShowSideNavbar((AppContext.showSideNavbar)?false:true)}> Leela and Jaya</h2>}
       <Items>
         <li><Link to='/SavedList'>
         <svg width={ifMobileorIfLoptop('30px', '45px')} height={ifMobileorIfLoptop('30px', '45px')} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#CFB284"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534C16.7551 3.2753 13.7994 3.90317 12 6.00019Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>

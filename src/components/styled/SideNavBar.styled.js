@@ -8,7 +8,7 @@ left: 0;
 width: 60%;
 max-width: 700px;
 background-color: #FFFDD2;
-min-width: 40%;
+min-width: 30%;
 div{
     width: 100%;
     height: 100%;

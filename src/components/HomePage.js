@@ -1,20 +1,19 @@
-import React from 'react'
+import React, { useEffect, useContext } from 'react'
 import Banner from './Banner'
-import { useMediaQuery } from 'react-responsive'
 import ScrollList from './ScrollList'
 import Collections from './Collections'
-export default function HomePage() {
-    const isDesktopOrLaptop = useMediaQuery({ minWidth: 600 })
-    const isTabletOrMobile = useMediaQuery({ maxWidth: 600 })
+import NoteContext from '../Context/NoteContext';
 
-    const ifMobileorIfLoptop = (a, b) => {
-      if (isTabletOrMobile) { console.log('mobile'); return a };
-      if (isDesktopOrLaptop) console.log('laptop'); return b;
-    }
+export default function HomePage() {
+  const AppContext= useContext(NoteContext)
+
+    useEffect(()=>{
+      AppContext.setShowSideNavbar(false)
+    },[])
   return (
     <>
       <Banner />
-      <ScrollList height={'17rem'} wrap={ifMobileorIfLoptop('nowrap','wrap')}></ScrollList>
+      <ScrollList height={'17rem'} wrap={AppContext.ifMobileorIfLoptop('nowrap','wrap')}></ScrollList>
       <Collections></Collections>
       
     </>

@@ -15,9 +15,12 @@ import Cart from "./Cart";
 import Product from "./components/Product";
 import SavedList from "./SavedList";
 import ContactUs from "./components/ContactUs";
+import NoteState from "./Context/NoteState";
 function App() {
   return (
     <>
+    <NoteState>
+
       <Router basename="/AnEcomersStore">
         <Navbar />
         <Routes>
@@ -31,6 +34,8 @@ function App() {
         </Routes>
         <Globalstyles />
       </Router>
+
+    </NoteState>
     </>
   );
 }

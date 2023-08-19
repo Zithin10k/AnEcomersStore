@@ -14,7 +14,7 @@ export default function SideNavBar() {
     padding:'.2rem ',
 borderRadius: '10px',
 textAlign: 'center',
-
+margin:'.5rem',
  
 
   }
@@ -26,10 +26,6 @@ textAlign: 'center',
            <Link  id='item' to="/Orders"><li style={listyle}>Orders</li></Link>
           <Link id='item' to="/ContactUs"> <li style={listyle}>Contact us</li></Link>
       </Items>
-      <div>
-
-      </div>
-
 
     </SideBar>
   )

@@ -1,19 +1,16 @@
-import React from 'react'
+import React,{useContext, useEffect} from 'react'
 import Container from './styled/Container'
 import { ScrollBar } from './styled/ScroolBar.styled'
 import { ScrollingItems } from './styled/ScrollingItems.styled'
 import { Tag } from './styled/Tag.styled'
 import { useMediaQuery } from 'react-responsive'
 import Price from './Price'
-
+import NoteContext from '../Context/NoteContext'
   export default function Orders(props) {
-    const isDesktopOrLaptop = useMediaQuery({ minWidth: 600 })
-    const isTabletOrMobile = useMediaQuery({ maxWidth: 600 })
-
-    const ifMobileorIfLoptop = (a, b) => {
-      if (isTabletOrMobile) { console.log('mobile'); return a };
-      if (isDesktopOrLaptop) console.log('laptop'); return b;
-    }
+    const AppContext= useContext(NoteContext)
+    useEffect(()=>{
+      AppContext.setShowSideNavbar(false)
+    },[])
   const items=['./img/item.jpeg','./img/item.jpeg','./img/item.jpeg']
 
   const style={
@@ -37,7 +34,7 @@ import Price from './Price'
        <img src={require(`${item}`)} />
        <h3 style={{marginRight:'auto',marginLeft:'.5rem'}}>This is an item</h3>
        <div style={{width:'100%',display:'flex',justifyContent:'space-between'}}>
-       <Tag laptop={ifMobileorIfLoptop(false,true)}>
+       <Tag laptop={AppContext.ifMobileorIfLoptop(false,true)}>
          100% cotton
        </Tag>
        <Price cutPrice={499}></Price>
